@@ -11,10 +11,12 @@ interface ModalProps {
 
 export function Modal({isOpen, setIsOpen, children}: ModalProps) {
 
+  console.log(isOpen);
+
   const [isModalOpen, setIsModalOpen] = useState(isOpen);
 
   useEffect(() => {
-    setIsModalOpen(!isModalOpen);
+    setIsModalOpen(isOpen);
   }, [isOpen]);
 
     return (

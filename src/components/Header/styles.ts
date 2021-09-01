@@ -40,4 +40,21 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 1120px) {
+    header {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 1rem;
+    }
+
+    nav {
+      div {
+        button {
+          
+        }
+      }
+    }
+
+  }
 `;

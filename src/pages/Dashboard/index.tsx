@@ -64,15 +64,15 @@ export function Dashboard() {
     setFoods(foodsFiltered);
   }
 
-  function toggleModal() {
+  function toggleModal(): void {
     setModalOpen(!modalOpen);
   }
 
-  function toggleEditModal(){
+  function toggleEditModal(): void {
     setEditModalOpen(!editModalOpen);
   }
 
-  function handleEditFood(food: FoodProps) {
+  function handleEditFood(food: FoodProps): void {
     setEditingFood(food);
     setEditModalOpen(true);
   }
